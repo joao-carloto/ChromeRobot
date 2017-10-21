@@ -39,7 +39,7 @@ HOW TO USE CHROME ROBOT?
 - Use the preferences window to change the locator preferences and the options for variable creation and usage.
 - You may select a group of test steps and automatically convert them to a new keyword.
 - You may select resource files and automatically add its path to the *Settings* section.
-- You may download the generated test script to your machine and run it directly or incorporate the code on some project. You must have the <a href='http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installation-instructions' target='_blank'>Robot Framework</a> and the <a href='https://github.com/rtomac/robotframework-selenium2library#installation' target='_blank'>Selenium2Library</a> installed. To help the installation you might want to use this <a href='http://joao-carloto.github.io/RF_Install_Script/' target='_blank'>script</a>.
+- You may download the generated test script to your machine and run it directly or incorporate the code on some project. You must have the <a href='http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installation-instructions' target='_blank'>Robot Framework</a> and the <a href='https://github.com/rtomac/robotframework-selenium2library#installation' target='_blank'>SeleniumLibrary</a> installed. To help the installation you might want to use this <a href='http://joao-carloto.github.io/RF_Install_Script/' target='_blank'>script</a>.
 
 
 Disclaimer: This tool is being released publicly because it is believed to have reached a stage where it can be helpful. However, most of it was written when the author should be sleeping, and it was not submitted to exhaustive testing.

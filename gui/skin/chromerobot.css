@@ -1,0 +1,252 @@
+.btn {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 2.3rem 2.3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn#selectButton {
+    background-image: url(white-icons/select.png);
+    margin-bottom: 0.3rem;
+}
+
+.btn#prefButton {
+    background-image: url(white-icons/appbar.cog.png);
+    margin-bottom: 0.3rem;
+}
+
+.btn#helpButton {
+    background-image: url(white-icons/appbar.question.png);
+    margin-bottom: 0.3rem;
+}
+
+.btn#addResourceButton {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-right: 0.3rem;
+    background-image: url(white-icons/appbar.add.png);
+}
+
+.btn#moveVarDownButton {
+    background-image: url(white-icons/appbar.chevron.down.png);
+}
+
+.btn#moveVarUpButton {
+    background-image: url(white-icons/appbar.chevron.up.png);
+}
+
+
+.btn#removeVarButton {
+    background-image: url(white-icons/appbar.minus.png);
+}
+
+.btn#addVarButton {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-right: 0.3rem;
+    background-image: url(white-icons/appbar.add.png);
+}
+
+.btn#playButton {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.4rem;
+    background-image: url(white-icons/appbar.control.play.png);
+}
+
+.btn#playButton:hover {
+    background-image: url(black-icons/appbar.control.play.png);
+}
+
+.playOn {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.4rem;
+    background-image: url(black-icons/appbar.control.play.png);
+    width: 2.7rem;
+    height: 2.7rem;
+    background-size: 2.7rem 2.7rem;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+}
+
+.btn#reportButton {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    background-image: url(white-icons/appbar.list.png);
+}
+
+.btn#reportButton:hover {
+    background-image: url(black-icons/appbar.list.png);
+}
+
+.btn#keywordButton {
+
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    background-image: url(white-icons/appbar.key.png);
+}
+
+.btn#downloadButton {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    background-image: url(white-icons/appbar.page.download.png);
+}
+
+.btn#openButton {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    background-image: url(white-icons/appbar.folder.open.png);
+}
+
+.btn#openButton:hover {
+    background-image: url(black-icons/appbar.folder.open.png);
+}
+
+.btn#saveAsButton {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    background-image: url(white-icons/appbar.save-as.png);
+}
+
+#saveAsButton:hover {
+    background-image: url(black-icons/appbar.save-as.png);
+}
+
+.btn#saveButton {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.4rem;
+    background-image: url(white-icons/appbar.save.png);
+}
+
+.btn#saveButton:hover {
+    background-image: url(black-icons/appbar.save.png);
+}
+
+.btn#enableLocatorButton {
+    background-image: url(white-icons/appbar.chevron.right.png);
+}
+
+.btn#enableLocatorButton:hover {
+    background-image: url(black-icons/appbar.chevron.right.png);
+}
+
+.btn#disableLocatorButton {
+    background-image: url(white-icons/appbar.chevron.left.png);
+}
+
+.btn#disableLocatorButton:hover {
+    background-image: url(black-icons/appbar.chevron.left.png);
+}
+
+.btn#upLocatorButton {
+    background-image: url(white-icons/appbar.chevron.up.png);
+}
+
+.btn#upLocatorButton:hover {
+    background-image: url(black-icons/appbar.chevron.up.png);
+}
+
+.btn#downLocatorButton {
+    background-image: url(white-icons/appbar.chevron.down.png);
+}
+
+.btn#downLocatorButton:hover {
+    background-image: url(black-icons/appbar.chevron.down.png);
+}
+
+.btn#selResButton {
+    background-image: url(white-icons/appbar.folder.open.png);
+    margin-right: 0.4rem;
+}
+
+.btn#selResButton:hover {
+    background-image: url(black-icons/appbar.folder.open.png);
+}
+
+.crBase {
+    color: #f2f2f2;
+    background-color: #474747;
+    /* background-color:#3E3E42 */
+}
+
+.crBase a {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.frBaseTab {
+    -moz-appearance: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    background-color: #474747;
+}
+
+.varBox {
+    color: #f2f2f2;
+    /*background-color:#474747;*/
+    background-color: #252526;
+    padding: 5px;
+    font-size: 11px;
+    margin: 3px;
+    border: solid 1px #f2f2f2;
+}
+
+#variableLines {
+    height: calc(100% - 85px);
+}
+
+.varNameBox {
+    width: 30%;
+}
+
+.varValueBox {
+    width: 60%;
+    float: right;
+}
+
+.varLabel {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.variableLineFocus {
+    background-color: #007acc;
+}
+
+.testBox {
+    -moz-appearance: none;
+    border-style: none;
+    color: #ffffff;
+    background-color: #141414;
+}
+
+.prefItem {
+    -moz-appearance: none;
+    color: #f2f2f2;
+    border-style: none;
+}
+
+.prefItemSelected {
+    -moz-appearance: none;
+    border-style: none;
+    color: #474747;
+    opacity: 1;
+    background-color: #f2f2f2;
+}
+
+.redirectPopup {
+    min-width: 340px;
+}
+
+#settingsArea {
+    height: calc(100% - 85px);
+}
+
+#settingsArea {
+    outline: none;
+    border: none;
+}

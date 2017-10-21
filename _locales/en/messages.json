@@ -1,0 +1,94 @@
+//TODO review and cleanup
+{
+  "btn_tooltip_select": {
+    "message": "Toggle Select Mode (Shift + Alt + Z)"
+  },
+    "btn_tooltip_preferences": {
+    "message": "Edit Preferences."
+  },
+    "btn_tooltip_help": {
+    "message": "Help and About"
+  },
+    "btn_tooltip_keyword": {
+    "message": "Create Keyword"
+  },
+    "btn_tooltip_download": {
+    "message": "Download Script"
+  },
+    "btn_tooltip_var_up": {
+    "message": "Move variable Up"
+  },
+    "btn_tooltip_var_down": {
+    "message": "Move Variable Down"
+  },
+    "btn_tooltip_delete_var": {
+    "message": "Delete Variable"
+  },
+    "btn_tooltip_add_var": {
+    "message": "Add Variable"
+  },
+    "btn_tooltip_add_resource": {
+    "message": "Add Resource File"
+  }, "warn": {
+    "message": "Warning"
+  },
+  "cannot_disable_loc": {
+    "message": "You cannot disable the xpath locator since it's the fallback option."
+  },
+  "default_loc": {
+    "message": "XPath is the fallback locator.\nNot possible to disable."
+  },
+  "more_than_one_frame": {
+    "message": "More than one frame is included on the selected elements or is an ancestor of a selected element."
+  },
+  "no_var_select": {
+    "message": "No variable selected."
+  },
+  "not_implemented": {
+    "message": "Keyword not implemented."
+  },
+  "no_form_el_select": {
+    "message": "No form elements are selected or exist inside a selected element."
+  },
+  "no_el_select": {
+    "message": "There are no selected elements."
+  },
+  "no_el_with_text": {
+    "message": "There are no selected elements with text."
+  },
+  "no_input_select": {
+    "message": "There are no input elements selected."
+  },
+  "no_text_select": {
+    "message": "There's no text in the selected elements."
+  },
+  "no_frame_select": {
+    "message": "There are no selected elements inside iframes."
+  },
+  "no_text_in_frame": {
+    "message": "No elements with text and inside a frame are selected."
+  },
+  "no_body": {
+    "message": "Sorry. This document has no body element.\nThere's nothing we can do here."
+  },
+  "no_xpath": {
+    "message": "Unable to define xpath locator for selected element."
+  },
+  "no_xhtml": {
+    "message": "Sorry, we don't support XHTML. \nSee issue http://code.google.com/p/selenium/issues/detail?id=222"
+  },
+    "no_steps_selected": {
+    "message": "Please select some test steps, from the *Test Cases* section, to convert into a keyword."
+  },
+  "no_key_name": {
+    "message": "Please enter a name for the new keyword."
+  },
+  "res_exists": {
+    "message": "This resource path is already included in the settings."
+  },
+  "help": {
+    "message": "TODO"
+  }
+
+
+}

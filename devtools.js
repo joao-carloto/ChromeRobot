@@ -1,0 +1,1 @@
+chrome.devtools.panels.create("Chrome Robot", "gui/skin/icon_16_on.png", "gui/cr_gui.html", function(panel) {});

@@ -1,0 +1,50 @@
+{
+    "name": "Chrome Robot",
+    "version": "0.1",
+    "description": "Writes Selenium automated tests for the Robot Framework",
+    "default_locale": "en",
+    "devtools_page": "devtools.html",
+    "background":
+    {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "nativeMessaging",
+        "tabs",
+        // TODO use this nicer notification API
+        "notifications",
+        "activeTab",
+        "storage",
+        "contextMenus",
+        "http://*/*",
+        "https://*/*",
+        "*://*/*"
+    ],
+    "icons":
+    {
+        "16": "gui/skin/icon16.png",
+        "48": "gui/skin/icon48.png",
+        "128": "gui/skin/icon128.png"
+    },
+    "browser_action":
+    {
+        "default_icon": "gui/skin/icon16.png",
+        "default_popup": "gui/redirect_popup.html",
+        "default_title": "Chrome Robot"
+    },
+    "commands":
+    {
+        "toggle-select":
+        {
+            "suggested_key":
+            {
+                "default": "Alt+Shift+Z",
+                "mac": "Alt+Shift+Z"
+            },
+            "description": "Toggles select mode"
+        }
+    },
+    "manifest_version": 2
+}

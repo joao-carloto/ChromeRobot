@@ -4,7 +4,7 @@ Chrome Robot
 WHAT IS CHROME ROBOT?
 
 Chrome Robot is a Chrome Dev Tools extension that allows you to create Robot Framework/Selenium tests, in a more efficient way.
-Check the demonstration videos on YouTube or keep reading. The videos below are from Fire Robot a currently defunct project for Firefox. Some functionalities do not apply here (namely running tests direclty from the extension) but they are good starting point.
+Check the demonstration videos on YouTube or keep reading. The videos below are from Fire Robot, a similar application for Firefox, from the same author. Most functionalities are identical, with a few exceptions.
 <ul>
 <li><a href='http://youtu.be/uzRwY6xkTC0' target='_blank'>Generic demonstration</a></li>
 <li><a href='https://www.youtube.com/watch?v=-yNYXSyOCKg' target='_blank'>Keyword extraction</a></li>
@@ -37,11 +37,11 @@ HOW TO USE CHROME ROBOT?
 - To fill and check forms you may select any element that includes the form elements of interest, not necessarily the form element.
 - For iframe related keywords you may select any element inside the iframe.
 - Use the preferences window to change the locator preferences and the options for variable creation and usage.
-- You may select resource files and automatically add its path to the *Settings* section.
 - You may select a group of test steps and automatically convert them to a new keyword.
+- You may select resource files and automatically add its path to the *Settings* section.
 - You may download the generated test script to your machine and run it directly or incorporate the code on some project. You must have the <a href='http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installation-instructions' target='_blank'>Robot Framework</a> and the <a href='https://github.com/rtomac/robotframework-selenium2library#installation' target='_blank'>Selenium2Library</a> installed. To help the installation you might want to use this <a href='http://joao-carloto.github.io/RF_Install_Script/' target='_blank'>script</a>.
 
 
 Disclaimer: This tool is being released publicly because it is believed to have reached a stage where it can be helpful. However, most of it was written when the author should be sleeping, and it was not submitted to exhaustive testing.
-If you feel this project might be helpful to you, please contribute by providing feedback at TODO. 
+If you feel this project might be helpful to you, please contribute by providing feedback <a href='https://github.com/joao-carloto/ChromeRobot/issues' target='_blank'>here</a> . 
 Bugs, new features, small improvements, all are welcome. They will be addressed when possible.

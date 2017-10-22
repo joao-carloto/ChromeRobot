@@ -13,7 +13,6 @@
     "permissions": [
         "nativeMessaging",
         "tabs",
-        // TODO use this nicer notification API
         "notifications",
         "activeTab",
         "storage",

@@ -190,6 +190,7 @@ $(document).ready(function() {
     $('.varNameBox').on('change', _updateVarName);
 
     _updateVarStorage();
+    
     // TODO onbeforeunlod event is no longer working on devtools panels on chrome 61
     // https://developers.google.com/web/updates/2017/06/chrome-60-deprecations
     $(window).on('beforeunload', function() {
@@ -202,7 +203,9 @@ $(document).ready(function() {
         //TODO review this
          chrome.storage.local.remove(variablesTabDomain);
     });
+
     _resizePanelContent();
+
     // Hack from https://gist.github.com/OrganicPanda/8222636
     // Create an invisible iframe
     var iframe = document.createElement('iframe');

@@ -11,7 +11,7 @@ Check the demonstration videos on YouTube or keep reading. The videos below are 
 </ul>
 
 Keyword driven testing is in the far end of the spectrum from record and play tools, as far as test automation concerns. 
-Although this tool has some features in common with record and play tools, it's interest lies in some specific features that will help you to create high level custom keywords, based on the Selenium2library:
+Although this tool has some features in common with record and play tools, it's interest lies in some specific features that will help you to create high level custom keywords, based on the SeleniumLibrary:
 - Bulk selection of elements and creation of test steps in an adaptative way.
 - Filling and verification of forms based on their current state.
 - Easy preference definition for the page element locators.
@@ -21,8 +21,8 @@ Although this tool has some features in common with record and play tools, it's 
 
 HOW TO INSTALL CHROME ROBOT?
 
-- Get it from the chrome app store, once it's available (TODO), or just download the code here and use it as an unpacked extension.
-- Chrome Robot is a Dev Tools extension (Ctrl + Shift + I).You can find all functionalities on the respective Dev Tools tab.
+- Get it <a href='https://chrome.google.com/webstore/detail/chrome-robot/dihdbpkpgdkioobahfpnkondnekhbmlo' target='_blank'>HERE</a>, at the Chrome web store .
+- Chrome Robot is a Dev Tools extension (Ctrl + Shift + I), so can find all functionalities on the respective Dev Tools tab.
 - You may reposition the tab for ease of use.
 
 
@@ -42,6 +42,6 @@ HOW TO USE CHROME ROBOT?
 - You may download the generated test script to your machine and run it directly or incorporate the code on some project. You must have the <a href='http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installation-instructions' target='_blank'>Robot Framework</a> and the <a href='https://github.com/rtomac/robotframework-selenium2library#installation' target='_blank'>SeleniumLibrary</a> installed. To help the installation you might want to use this <a href='http://joao-carloto.github.io/RF_Install_Script/' target='_blank'>script</a>.
 
 
-Disclaimer: This tool is being released publicly because it is believed to have reached a stage where it can be helpful. However, most of it was written when the author should be sleeping, and it was not submitted to exhaustive testing.
+<strong>Disclaimer:</strong> This tool is being released publicly because it is believed to have reached a stage where it can be helpful. However, most of it was written when the author should be sleeping, and it was not submitted to exhaustive testing.
 If you feel this project might be helpful to you, please contribute by providing feedback <a href='https://github.com/joao-carloto/ChromeRobot/issues' target='_blank'>here</a> . 
 Bugs, new features, small improvements, all are welcome. They will be addressed when possible.

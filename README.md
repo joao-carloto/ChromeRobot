@@ -22,7 +22,7 @@ Although this tool has some features in common with record and play tools, it's 
 HOW TO INSTALL CHROME ROBOT?
 
 - Get it <a href='https://chrome.google.com/webstore/detail/chrome-robot/dihdbpkpgdkioobahfpnkondnekhbmlo' target='_blank'>HERE</a>, at the Chrome web store .
-- Chrome Robot is a Dev Tools extension (Ctrl + Shift + I), so can find all functionalities on the respective Dev Tools tab.
+- Chrome Robot is a Dev Tools extension (Ctrl + Shift + I), so you can find all functionalities on the respective Dev Tools tab.
 - You may reposition the tab for ease of use.
 
 

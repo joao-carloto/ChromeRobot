@@ -3,7 +3,7 @@ var enabledLocators;
 var $focusedVar;
 var tabID;
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     tabID = chrome.devtools.inspectedWindow.tabId;
     variablesTabDomain = "variables." + tabID;
@@ -53,33 +53,44 @@ $(document).ready(function() {
     });
     $('#helpButton').on("click", _openHelp);
 
-    $("#keywordButton").jqxButton({
-        theme: 'metrodark'
-    });
-    $("#keywordButton").jqxTooltip({
-        theme: 'metrodark',
-        showDelay: 500,
-        position: 'top',
-        content: chrome.i18n.getMessage("btn_tooltip_keyword"),
-    });
-    $('#keywordButton').on("click", _openNewKey);
-
     $("#downloadButton").jqxButton({
         theme: 'metrodark'
     });
     $("#downloadButton").jqxTooltip({
         theme: 'metrodark',
         showDelay: 500,
-        position: 'top-left',
+        position: 'top-right',
         content: chrome.i18n.getMessage("btn_tooltip_download"),
     });
     $('#downloadButton').on('click', _downloadTest);
 
+    $("#clipboardButton").jqxButton({
+        theme: 'metrodark'
+    });
+    $("#clipboardButton").jqxTooltip({
+        theme: 'metrodark',
+        showDelay: 500,
+        position: 'top-right',
+        content: chrome.i18n.getMessage("btn_tooltip_clipboard"),
+    });
+    $('#clipboardButton').on('click', _copyToClipboard);
+
+    $("#keywordButton").jqxButton({
+        theme: 'metrodark'
+    });
+    $("#keywordButton").jqxTooltip({
+        theme: 'metrodark',
+        showDelay: 500,
+        position: 'top-left',
+        content: chrome.i18n.getMessage("btn_tooltip_keyword"),
+    });
+    $('#keywordButton').on("click", _openNewKey);
+
     $("#htmlArea").jqxTextArea({
         width: '100%',
         theme: 'metrodark',
-     // TODO makes the letters look too faded
-     // disabled: true
+        // TODO makes the letters look too faded
+        // disabled: true
     });
 
     $('#crScriptTabs').jqxTabs({
@@ -87,14 +98,12 @@ $(document).ready(function() {
         position: 'top',
         theme: 'metrodark'
     });
-
     $('#crScriptTabs').jqxTabs('select', 2);
 
     $("#settingsArea").jqxTextArea({
         width: '100%',
         theme: 'metrodark'
     });
-
     $("#settingsArea").jqxTextArea('val',
         'Documentation   \tTest suite created with ChromeRobot.\nLibrary   \tSelenium2Library   15.0   5.0');
 
@@ -103,7 +112,6 @@ $(document).ready(function() {
         height: '99%',
         theme: 'metrodark'
     });
-
     $("#testCasesArea").jqxTextArea('val', 'Chrome Robot Test Case\n');
 
     $("#keywordsArea").jqxTextArea({
@@ -146,7 +154,7 @@ $(document).ready(function() {
         position: 'top-left',
         content: chrome.i18n.getMessage("btn_tooltip_add_var"),
     });
-    $('#addVarButton').on("click", function() {
+    $('#addVarButton').on("click", function () {
         _addVar('', '');
     });
 
@@ -190,18 +198,17 @@ $(document).ready(function() {
     $('.varNameBox').on('change', _updateVarName);
 
     _updateVarStorage();
-    
+
     // TODO onbeforeunlod event is no longer working on devtools panels on chrome 61
     // https://developers.google.com/web/updates/2017/06/chrome-60-deprecations
-    $(window).on('beforeunload', function() {
+    $(window).on('beforeunload', function () {
         sendObjectToInspectedPage({
             action: "code",
             content: "removeSelectContext()"
-            
         });
         selectedElementsInfo = [];
         //TODO review this
-         chrome.storage.local.remove(variablesTabDomain);
+        chrome.storage.local.remove(variablesTabDomain);
     });
 
     _resizePanelContent();
@@ -212,11 +219,11 @@ $(document).ready(function() {
     iframe.id = "hacky-scrollbar-resize-listener";
     iframe.style.cssText = 'height: 0; background-color: transparent; margin: 0; padding: 0; overflow: hidden; border-width: 0; position: absolute; width: 100%;';
     // Register our event when the iframe loads
-    iframe.onload = function() {
+    iframe.onload = function () {
         // The trick here is that because this iframe has 100% width 
         // it should fire a window resize event when anything causes it to 
         // resize (even scrollbars on the outer document)
-        iframe.contentWindow.addEventListener('resize', function() {
+        iframe.contentWindow.addEventListener('resize', function () {
             _resizePrefWindow();
             _resizeHelpWindow();
             _resizeKeyWindow();
@@ -292,7 +299,7 @@ function toggleSelectMode() {
     }
 }
 
-function clearSectedElements(){
+function clearSectedElements() {
     selectedElementsInfo = [];
     selectedElementsCount = 0;
     textFragmentsCount = 0;
@@ -321,7 +328,7 @@ function _addResource() {
     var fileChooser = document.createElement("input");
     fileChooser.type = 'file';
     fileChooser.accept = '.txt,.robot';
-    fileChooser.addEventListener('change', function(evt) {
+    fileChooser.addEventListener('change', function (evt) {
         var file = evt.target.files[0];
         var resource = "Resource   \t" + file.name;
         var settingsTextArea = document.getElementById("settingsAreaTextArea");
@@ -386,12 +393,12 @@ function _focusVarLine() {
 
 function _updateVarStorage() {
     var variables = [];
-    $(".variableLine").each(function() {
+    $(".variableLine").each(function () {
         var variable = {};
-        $(this).find(".varNameBox").each(function(index, item) {
+        $(this).find(".varNameBox").each(function (index, item) {
             variable.varName = item.value;
         });
-        $(this).find(".varValueBox").each(function(index, item) {
+        $(this).find(".varValueBox").each(function (index, item) {
             variable.varValue = item.value;
         });
         if (variable.varName) variables.push(variable);
@@ -420,7 +427,7 @@ function _updateVarName() {
 }
 
 function _resizePanelContent() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#contentSplitter").jqxSplitter({
             height: ($(window).outerHeight() - 108),
         });
@@ -428,7 +435,7 @@ function _resizePanelContent() {
 }
 
 function _resizeHelpWindow() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#helpWindow").jqxWindow({
             height: $(window).height() - 100,
             width: $(window).width() - 100,
@@ -442,6 +449,26 @@ async function _downloadTest() {
     var fileName = 'crTest-' + getTimeStamp() + '.robot';
     var content = getTestContent();
     download(element, fileName, content);
+}
+
+async function _copyToClipboard() {
+    var content = getTestContent();
+    var aux = document.createElement("textarea");
+    aux.innerHTML = content;
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+    document.body.removeChild(aux);
+    $("#clipboardButton").jqxTooltip({
+        content: chrome.i18n.getMessage("clipboard_success"),
+    });
+    $("#clipboardButton").jqxTooltip('open');
+    setTimeout(function () {
+        $("#clipboardButton").jqxTooltip('close');
+        $("#clipboardButton").jqxTooltip({
+            content: chrome.i18n.getMessage("btn_tooltip_clipboard"),
+        });
+    }, 3000);
 }
 
 function download(element, fileName, content) {
@@ -461,11 +488,11 @@ function download(element, fileName, content) {
 function getTestContent() {
     var settings = $('#settingsArea').jqxTextArea('val');
     var variables = '';
-    $(".variableLine").each(function() {
-        $(this).find(".varNameBox").each(function(index, item) {
+    $(".variableLine").each(function () {
+        $(this).find(".varNameBox").each(function (index, item) {
             variables += '${' + item.value + '}   \t';
         });
-        $(this).find(".varValueBox").each(function(index, item) {
+        $(this).find(".varValueBox").each(function (index, item) {
             variables += item.value + '\n';
         });
     });

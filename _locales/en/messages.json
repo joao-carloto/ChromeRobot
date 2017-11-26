@@ -15,8 +15,14 @@
     "btn_tooltip_download": {
     "message": "Download Script"
   },
+    "btn_tooltip_clipboard": {
+    "message": "Copy Script to Clipboard"
+  },
+    "clipboard_success": {
+    "message": "Script Copied!"
+  },
     "btn_tooltip_var_up": {
-    "message": "Move variable Up"
+    "message": "Move Variable Up"
   },
     "btn_tooltip_var_down": {
     "message": "Move Variable Down"

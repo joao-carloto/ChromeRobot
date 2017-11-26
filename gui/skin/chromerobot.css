@@ -82,16 +82,19 @@
 }
 
 .btn#keywordButton {
-
     margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
     background-image: url(white-icons/appbar.key.png);
 }
 
 .btn#downloadButton {
     margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin-right: 0.1rem;
     background-image: url(white-icons/appbar.page.download.png);
+}
+
+.btn#clipboardButton {
+    margin-top: 0.3rem;
+    background-image: url(white-icons/appbar.clipboard.paste.png);
 }
 
 .btn#openButton {

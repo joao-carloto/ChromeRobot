@@ -27,7 +27,6 @@ chrome.storage.onChanged.addListener(function(changes, area) {
 	}
 });
 
-
 // Defines de locator we are going to use for a specific element
 function justGetLocator(element) {
 	var i;

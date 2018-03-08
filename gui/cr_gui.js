@@ -199,13 +199,7 @@ $(document).ready(function () {
 
     _updateVarStorage();
 
-    // TODO onbeforeunlod event is no longer working on devtools panels on chrome 61
-    // https://developers.google.com/web/updates/2017/06/chrome-60-deprecations
     $(window).on('beforeunload', function () {
-        sendObjectToInspectedPage({
-            action: "code",
-            content: "removeSelectContext()"
-        });
         selectedElementsInfo = [];
         //TODO review this
         chrome.storage.local.remove(variablesTabDomain);

@@ -48,6 +48,10 @@ chrome.runtime.onConnect.addListener(function (port) {
         var tabs = Object.keys(connections);
         for (var i = 0, len = tabs.length; i < len; i++) {
             if (connections[tabs[i]] == port) {
+                chrome.tabs.executeScript(parseInt(tabs[i]), {
+                    code: "removeSelectContext()",
+                    allFrames: true
+                });
                 delete connections[tabs[i]];
                 break;
             }

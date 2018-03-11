@@ -501,7 +501,7 @@ function getTimeStamp() {
     );
 }
 
-// Goolge analytics
+// Google analytics
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-115470193-1']);
 _gaq.push(['_trackPageview']);

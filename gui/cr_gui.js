@@ -204,9 +204,6 @@ $(document).ready(function () {
         //TODO review this
         chrome.storage.local.remove(variablesTabDomain);
     });
-
-    _resizePanelContent();
-
     // Hack from https://gist.github.com/OrganicPanda/8222636
     // Create an invisible iframe
     var iframe = document.createElement('iframe');
@@ -221,7 +218,6 @@ $(document).ready(function () {
             _resizePrefWindow();
             _resizeHelpWindow();
             _resizeKeyWindow();
-            _resizePanelContent();
         });
     };
     // Stick the iframe somewhere out of the way
@@ -418,14 +414,6 @@ function _updateVarName() {
         $('#testCasesArea').val(newTests);
     }
     _updateVarStorage();
-}
-
-function _resizePanelContent() {
-    setTimeout(function () {
-        $("#contentSplitter").jqxSplitter({
-            height: ($(window).outerHeight() - 108),
-        });
-    }, 100);
 }
 
 function _resizeHelpWindow() {

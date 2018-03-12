@@ -28,7 +28,7 @@ HOW TO INSTALL CHROME ROBOT?
 
 HOW TO USE CHROME ROBOT?
 - Open the Dev Tools Chrome Robot tab.
-- Toggle the select button (shortcut keys Shift + Alt + Z).
+- Toggle the select mode button (shortcut keys Shift + Alt + Z).
 - The active web page will get a dashed border, along with any included frames or iframes.
 - Click to select page elements of interest.
 - Right-click the page under testing to access the keyword context menu.

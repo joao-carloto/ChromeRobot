@@ -106,7 +106,7 @@ $(document).ready(function () {
         theme: 'metrodark'
     });
     $("#settingsArea").jqxTextArea('val',
-        'Documentation   \tTest suite created with ChromeRobot.\nLibrary   \tSelenium2Library   15.0   5.0');
+        'Documentation   \tTest suite created with ChromeRobot.\nLibrary   \tSeleniumLibrary   15.0   5.0');
 
     $("#testCasesArea").jqxTextArea({
         width: '100%',

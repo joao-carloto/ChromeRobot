@@ -1,6 +1,6 @@
 {
     "name": "Chrome Robot",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Writes Selenium automated tests for the Robot Framework",
     "default_locale": "en",
     "devtools_page": "devtools.html",

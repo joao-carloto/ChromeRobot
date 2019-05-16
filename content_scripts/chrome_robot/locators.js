@@ -124,7 +124,7 @@ function getLocator(element) {
 	if (varPreferences.createVarLoc) {
 		var newVarName = getVarNameFromValue(loc);
 		if (!newVarName) {
-			var args = ["locator-", element];
+			var args = [element, "_locator"];
 			newVarName = createVarNameFromText.apply(null, args);
 			if (!newVarName) {
 				newVarName = createVarNameForInput.apply(null, args);
@@ -243,7 +243,7 @@ function getLocatorForGenericElement(element) {
 	if (varPreferences.createVarLoc) {
 		var newVarName = getVarNameFromValue(loc);
 		if (!newVarName) {
-			var args = ["locator-", element];
+			var args = [element, "_locator"];
 			newVarName = createVarNameFromText.apply(null, args);
 			if (!newVarName) {
 				newVarName = createVarNameForInput.apply(null, args);

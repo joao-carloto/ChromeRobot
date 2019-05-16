@@ -43,10 +43,10 @@ chrome.storage.onChanged.addListener(function(changes, area) {
 
 //TODO improve this
 function createVarNameForInput(element) {
-	var prefix = "";
+	var sufix = "";
 	if (arguments.length > 1) {
-		prefix = arguments[0];
-		element = arguments[1];
+		element = arguments[0];
+		sufix = arguments[1];
 	}
 	var varName;
 	if (element.tagName == "INPUT" &&
@@ -89,10 +89,10 @@ function createVarNameForInput(element) {
 	if (varName !== undefined) {
 		varName = varName.toLowerCase();
 		varName = varName.trim();
-		varName = varName.replace(/\s{1,}/g, "-");
+		varName = varName.replace(/\s{1,}/g, "_");
 		var regex = new XRegExp("[^\\p{N}\\p{L}-_]", "g");
 		varName = XRegExp.replace(varName, regex, "");
-		varName = varName.replace(/-{2,}/g, "-").replace(/^-|-$/g, "");
+		varName = varName.replace(/-{2,}/g, "_").replace(/^-|-$/g, "");
 		varName = varName.substring(0, 63);
 	}
 	if (varName === undefined || varName == "")
@@ -100,16 +100,16 @@ function createVarNameForInput(element) {
 		varName = "var-name";
 	}
 	
-	varName = prefix + varName;
+	varName = varName + sufix;
 	varName = indexVarName(varName);
 	return varName;
 }
 
 function createVarNameFromText(element) {
-	var prefix = "";
+	var sufix = "";
 	if (arguments.length > 1) {
-		prefix = arguments[0];
-		element = arguments[1];
+		element = arguments[0];
+		sufix = arguments[1];
 	}
 	var varName;
 	if (element.tagName == "INPUT" &&
@@ -135,16 +135,16 @@ function createVarNameFromText(element) {
 		varName = element.textContent;
 		varName = varName.toLowerCase();
 		varName = varName.trim();
-		varName = varName.replace(/\s{1,}/g, "-");
+		varName = varName.replace(/\s{1,}/g, "_");
 		var regex = new XRegExp("[^\\p{N}\\p{L}-_]", "g");
 		varName = XRegExp.replace(varName, regex, "");
-		varName = varName.replace(/-{2,}/g, "-").replace(/^-|-$/g, "");
+		varName = varName.replace(/-{2,}/g, "_").replace(/^-|-$/g, "");
 		varName = varName.substring(0, 63);
 	}
 	if (!varName || varName === "") {
 		varName = null;
 	} else {
-		varName = prefix + varName;
+		varName = varName + sufix;
 		varName = indexVarName(varName);
 	}
 	return varName;

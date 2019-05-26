@@ -99,15 +99,15 @@ function justGetLocator(element) {
 			} else if (selLocType == "link" && getNodeValue(element) !== "") {
 				loc = getNodeValue(element);
 			} else if (selLocType == "xpath") {
-				loc = "xpath=" + (element.xpath || getTextBasedXPath(element));
+				loc = "xpath:" + (element.xpath || getTextBasedXPath(element));
 			} else if (selLocType == "class_xpath" && element.getAttribute("class")) {
-				loc = "xpath=" + getClassBasedXPath(element);
+				loc = "xpath:" + getClassBasedXPath(element);
 			}
 		}
 		if (loc) break;
 	}
 	if (!loc) {
-		loc = "xpath=" + (element.xpath || getTextBasedXPath(element));
+		loc = "xpath:" + (element.xpath || getTextBasedXPath(element));
 	}
 	loc = escapeRobot(loc);
 
@@ -228,15 +228,15 @@ function getLocatorForGenericElement(element) {
 			} else if (selLocType == "name" && element.name) {
 				loc = element.name;
 			} else if (selLocType == "xpath") {
-				loc = "xpath=" + (element.xpath || getTextBasedXPath(element));
+				loc = "xpath:" + (element.xpath || getTextBasedXPath(element));
 			} else if (selLocType == "class_xpath" && element.getAttribute("class")) {
-				loc = "xpath=" + getClassBasedXPath(element);
+				loc = "xpath:" + getClassBasedXPath(element);
 			}
 		}
 		if (loc) break;
 	}
 	if (!loc) {
-		loc = "xpath=" + (element.xpath || getTextBasedXPath(element));
+		loc = "xpath:" + (element.xpath || getTextBasedXPath(element));
 	}
 	loc = escapeRobot(loc);
 

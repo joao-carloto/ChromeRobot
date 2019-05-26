@@ -155,7 +155,7 @@ function indexVarName(varName) {
 	for (var i = 0; i < variables.length; i++) {
 		if (varNameExists(varName)) {
 			varName = varName.replace(/(-*\d*)$/, "");
-			varName = varName + "-" + (i + 2);
+			varName = varName + "_" + (i + 2);
 		} else {
 			break;
 		}

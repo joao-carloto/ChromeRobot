@@ -29,15 +29,21 @@
 }
 
 .btn#moveVarDownButton {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     background-image: url(white-icons/appbar.chevron.down.png);
 }
 
 .btn#moveVarUpButton {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     background-image: url(white-icons/appbar.chevron.up.png);
 }
 
 
 .btn#removeVarButton {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     background-image: url(white-icons/appbar.minus.png);
 }
 

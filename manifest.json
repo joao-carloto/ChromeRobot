@@ -1,6 +1,6 @@
 {
     "name": "Chrome Robot",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Writes Selenium automated tests for the Robot Framework",
     "default_locale": "en",
     "devtools_page": "devtools.html",
@@ -11,9 +11,7 @@
         ]
     },
     "permissions": [
-        "nativeMessaging",
         "tabs",
-        "notifications",
         "activeTab",
         "storage",
         "contextMenus",

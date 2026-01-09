@@ -1,3 +1,8 @@
+WARNING! This project is no longer maintained due to the following reasons:
+- Deep changes on the browser API.
+- Lack of time.
+- I'm more into Cypress these days.
+
 Chrome Robot
 =========
 
